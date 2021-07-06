@@ -1,0 +1,74 @@
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Permanent Marker', cursive
+*/
+
+
+#listaRegistros{ display: none; }
+#cadastroRegistro{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body[page=lista] #listaRegistros{ display: block; }
+body[page=cadastro] #cadastroRegistro{ display: flex; }
+
+body{
+    background-image: linear-gradient(45deg,black, rgb(6, 239, 247));
+    font-family: 'Abril Fatface', cursive;
+    font-size: 14px;
+    height: 100vh;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: solid 1px #0c0c0c;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    color: rgb(238, 10, 10);
+    font-weight: 900;
+    margin: 3px;
+    padding: 10px 15px;
+}
+button.Deletar{
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+input{
+    border: solid 1px rgb(8, 8, 8);
+    border-radius: 8px;
+    padding: 10px ;
+}
+
+.label>div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.label>div>input{
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+   
+    <!-----LINKS----->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Balsamiq+Sans&family=Kalam:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body page='lista'>
+    
+    <div id='listaRegistros'>
+
+        <div style='display: flex;'>
+            <input style='flex:1' placeholder="PESQUISAR -> Digite o nome do ANÚNCIO!!!" autofocus id='inputPesquisa' />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Anuncio</th>
+                    <th>Cliente</th>
+                    <th>Investimento por Dia</th>
+                    <th>Data de Início</th>
+                    <th>Data de Término</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
+        </div>
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' placeholder="Não digite aqui!!!" />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Anuncio</div>
+            <div>
+                <input id='anuncio' placeholder="Digite o nome do ANÚNCIO!!!"/>
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Cliente</div>
+            <div>
+                <input id='cliente' placeholder="Digite o nome do CLIENTE!!!" />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Investimento por Dia</div>
+            <div>
+                <input type='number' id='investimento' placeholder="Digite o valor do Investimento Diario!!!" />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Data de Início</div>
+            <div>
+                <input type='date' id='data1' placeholder="Digite a Data de INICIO do Investimento!!!"/>
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Data de Término</div>
+            <div>
+                <input type='date' id='data2' placeholder="Digite a Data de TÉRMINO do Investimento!!!"/>
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+        </div>
+
+    </form>
+    <script type='text/javascript' src="./script.js"></script> 
+</body>
+</html>
